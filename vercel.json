@@ -1,0 +1,39 @@
+{
+  "buildCommand": "",
+  "outputDirectory": ".",
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/products",
+      "destination": "/products.html"
+    },
+    {
+      "source": "/about",
+      "destination": "/about.html"
+    },
+    {
+      "source": "/insights",
+      "destination": "/insights.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html"
+    },
+    {
+      "source": "/modified-starch-south-africa",
+      "destination": "/modified-starch-south-africa.html"
+    },
+    {
+      "source": "/full-cream-milk-powder-south-africa",
+      "destination": "/full-cream-milk-powder-south-africa.html"
+    },
+    {
+      "source": "/soya-lecithin-south-africa",
+      "destination": "/soya-lecithin-south-africa.html"
+    },
+    {
+      "source": "/edible-oils-south-africa",
+      "destination": "/edible-oils-south-africa.html"
+    }
+  ]
+}

@@ -1,15 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="JMR Global Group - Food ingredient sourcing specialists connecting Mercosur to Africa." />
-  <title>JMR Global Group</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JMR Global Group | Agri-Food Sourcing & Trade Specialists</title>
+  <meta name="description" content="JMR Global Group bridges premium agricultural producers in South America with high-volume food manufacturers and distributors across the Middle East and GCC region.">
+  <meta property="og:title" content="JMR Global Group, Food Ingredient Sourcing Mercosur to Africa">
+  <meta property="og:description" content="JMR Global Group connects South African food manufacturers with premium food ingredients from Argentina, Brazil and Uruguay. Modified starch, milk powder, soya lecithin and edible oils.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jmrglobalgroup.com/images/og-share.png">
+  <meta property="og:image:secure_url" content="https://jmrglobalgroup.com/images/og-share.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* Desktop layout defaults */
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 15px;
+      box-sizing: border-box;
+      position: relative;
+    }
+    .nav-logo {
+      flex-shrink: 0;
+    }
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    .menu-toggle {
+      display: none; /* Hidden on desktop viewports */
+      background: none;
+      border: none;
+      font-size: 28px;
+      cursor: pointer;
+      color: #0d1f3c;
+      padding: 5px;
+      line-height: 1;
+    }
+
+    /* Mobile Responsive Layout (Screens under 768px wide) */
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block; /* Show hamburger button on mobile */
+      }
+      .nav-links {
+        display: none; /* Hide standard link row by default */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff; 
+        padding: 20px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        gap: 15px;
+        z-index: 1000;
+        align-items: flex-start;
+      }
+      /* This utility class gets toggled via the JavaScript function below */
+      .nav-links.active {
+        display: flex; 
+      }
+    }
+  </style>
 </head>
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
+<nav style="background:#fff; position:relative; z-index:1001;">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.svg" alt="JMR Global" style="height:30px; display:block;">
+    </a>
+    
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation">☰</button>
+
+    <div class="nav-links" id="navLinks">
+      <a href="index.html" class="active">Home</a>
+      <a href="products.html" class="">Products</a>
+      <a href="about.html" class="">About</a>
+      <a href="insights.html" class="">Insights</a>
+      <a href="contact.html" class="">Contact</a>
+      <a href="https://www.linkedin.com/company/jmrglobalingredients/" target="_blank" rel="noopener" style="color:var(--gold)">LinkedIn</a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  function toggleMenu() {
+    var links = document.getElementById("navLinks");
+    var button = document.querySelector(".menu-toggle");
+    if (links.classList.contains("active")) {
+      links.classList.remove("active");
+      button.innerHTML = "☰";
+    } else {
+      links.classList.add("active");
+      button.innerHTML = "✕"; // Switch to clear close button when menu is expanded
+    }
+  }
+</script>
+
+<section class="hero">
+  <div class="hero-dots"></div>
+  <div class="container" style="position:relative">
+    <div class="hero-badge">SOUTH AMERICA TO GCC & MIDDLE EAST</div>
+    <h1>Global Supply Chains. Secured Trading. Reliable Agri-Food Commodities.</h1>
+    <p>JMR Global Group bridges premium agricultural producers in South America with high-volume food manufacturers and distributors across the Middle East and GCC region.</p>
+    <a href="contact.html" class="btn-gold">GET IN TOUCH</a>
+  </div>
+</section>
+
+<section style="padding:60px 0;background:var(--bg-warm)">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center" class="two-col">
+      <div>
+        <div class="badge">Who We Are</div>
+        <h2 class="section-title">Two regions, one Atlantic, one team</h2>
+        <p style="color:var(--text-mid);font-size:16px;line-height:1.8;margin-bottom:16px">
+          JMR Global Group was founded by South Africans based in Buenos Aires with over 10 years of experience building agribusiness trade flows between Latin America and the world.
+        </p>
+        <p style="color:var(--text-mid);font-size:16px;line-height:1.8;margin-bottom:16px">
+          Mercosur is one of the world's great agricultural powerhouses. South Africa is Africa's leading food processing hub. We connect the two.
+        </p>
+        <a href="about.html" class="btn-gold" style="margin-top:8px">LEARN MORE</a>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px" class="four-col">
+        <div style="border-radius:8px;overflow:hidden;aspect-ratio:4/3"><img src="images/dairy-visit.jpg" alt="Dairy supply chain visit Mercosur" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="border-radius:8px;overflow:hidden;aspect-ratio:4/3"><img src="images/eldoret.jpg" alt="Eldoret Kenya food market" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="border-radius:8px;overflow:hidden;aspect-ratio:4/3"><img src="images/chickens.jpg" alt="Poultry operations East Africa" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="border-radius:8px;overflow:hidden;aspect-ratio:4/3"><img src="images/fertilizer-distribution.jpg" alt="Agricultural supply chain Latin America" style="width:100%;height:100%;object-fit:cover"></div>
+      </div>
+    </div>
+    <div class="stats-grid" style="margin-top:24px">
+      <div class="stat-box"><div class="stat-value">10+</div><div class="stat-label">Years in agribusiness</div></div>
+      <div class="stat-box"><div class="stat-value">Mercosur</div><div class="stat-label">Exclusive sourcing region</div></div>
+      <div class="stat-box"><div class="stat-value">Africa</div><div class="stat-label">Primary end market</div></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:20px 0 60px 0;background:var(--bg)">
+  <div class="container">
+<div style="text-align:center;margin-bottom:32px">
+      <div class="badge">What We Source</div>
+      <h2 class="section-title">Our Product Range</h2>
+      <p class="section-intro" style="margin:0 auto">From modified starches to dairy ingredients and edible oils, sourced directly from certified Mercosur producers.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:24px" class="two-col">
+      <div class="card">
+        <h3>Industrial Legume & Pulse Derivatives</h3>
+        <p>Fine-mesh chickpea flour, lentil flours (red/green), and export-grade whole pulses. Directly sourced from Argentine producers for industrial baking, gluten-free formulations, and protein enrichment.</p>
+      </div>
+      <div class="card"><h3>Modified Corn Starch E1422</h3><p>Acetylated distarch adipate, ideal for sauces, dairy, processed foods and bakery applications requiring heat and freeze-thaw stability. Origin: Argentina / Brazil.</p></div>
+      <div class="card"><h3>Full Cream Milk Powder</h3><p>Medium heat FCMP for coffee creamers, recombined dairy and food manufacturing. Sourced from certified Uruguayan and Argentine cooperatives. Origin: Uruguay / Argentina.</p></div>
+      <div class="card"><h3>Soya Lecithin</h3><p>Food grade soya lecithin from Argentina's Rosario crushing corridor, the world's largest soy processing complex. Competitive FOB pricing, Halal available. Origin: Argentina.</p></div>
+      <div class="card"><h3>Sunflower &amp; Soybean Oil</h3><p>Refined edible oils from Argentina's major oilseed processors. Argentina is the world's 2nd largest sunflower oil exporter. Origin: Argentina / Brazil.</p></div>
+    </div>
+    <div style="text-align:center;margin-top:40px"><a href="products.html" class="btn-gold">VIEW ALL PRODUCTS</a></div>
+  </div>
+</section>
+
+<section style="padding:60px 0;background:var(--bg-warm)">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:52px">
+      <div class="badge">Market Intelligence</div>
+      <h2 class="section-title">Data-Led Sourcing</h2>
+      <p class="section-intro" style="margin:0 auto">We track live trade flows between Mercosur and Africa using SARS and UN Comtrade data, so every sourcing decision is backed by real market intelligence.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px" class="two-col">
+      <div class="insight-card">
+        <div class="stat">$8.5M</div>
+        <h3>SA Soya Lecithin Market</h3>
+        <p>South Africa imports $8.5M of soya lecithin annually, with China supplying 69% of the market. Argentina exports $92.5M globally but zero to South Africa.</p>
+        <span class="insight-tag tag-untapped">UNTAPPED</span>
+      </div>
+      <div class="insight-card">
+        <div class="stat">$0/kg</div>
+        <h3>Zero Mercosur Modified Starch to SA</h3>
+        <p>SA imports $36M of modified starch annually, predominantly from Thailand and USA. Argentina and Brazil are competitive producers with zero current share.</p>
+        <span class="insight-tag tag-untapped">PRICE GAP</span>
+      </div>
+      <div class="insight-card">
+        <div class="stat">R3.3B</div>
+        <h3>Mercosur Imports to SA (2025)</h3>
+        <p>South Africa imported R3.3 billion in food ingredients from Mercosur in 2025, up 24% year on year.</p>
+        <span class="insight-tag tag-latam">GROWING</span>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:40px"><a href="insights.html" class="btn-gold">VIEW ALL INSIGHTS</a></div>
+  </div>
+</section>
+
+
+<section style="padding:60px 0;background:var(--bg-soft);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+  <div class="container">
+    <div style="max-width:800px;margin:0 auto;text-align:center">
+      <div class="badge">Logistics & Risk Management</div>
+      <h2 class="section-title">Alternative Trade Corridor Routing</h2>
+      <p style="color:var(--text-mid);font-size:16px;line-height:1.8;margin-top:16px">
+        We leverage direct ocean freight allocations from safe Atlantic ports coupled with secure overland land-bridge connections via the Arabian Sea (CFR Salalah / Oman) to guarantee zero-disruption delivery to Gulf manufacturing plants.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section style="padding:60px 0;background:var(--navy)">
+  <div class="container" style="text-align:center">
+    <div class="hero-badge">Work With Us</div>
+    <h2 style="font-size:clamp(28px,4vw,40px);color:#fff;margin-bottom:20px">Ready to source smarter?</h2>
+    <p style="color:rgba(255,255,255,0.7);font-size:17px;max-width:520px;margin:0 auto 36px;line-height:1.7">Whether you are a food manufacturer looking for ingredients or a Mercosur producer looking for African distribution, let's talk.</p>
+    <a href="contact.html" class="btn-gold">GET IN TOUCH</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-logo"><img src="images/logo-light.svg" alt="JMR Global" style="height:28px;display:block"></div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="insights.html">Insights</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://www.linkedin.com/company/jmrglobalingredients/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+  <div class="container" style="margin-top:16px">
+    <div class="footer-copy">INGREDIENT SOURCING · MERCOSUR TO AFRICA · © 2026 JMR GLOBAL GROUP</div>
+  </div>
+</footer>
 </body>
 </html>

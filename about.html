@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About JMR Global Group, Mercosur to Africa Food Ingredient Sourcing</title>
+  <meta name="description" content="JMR Global Group is a Buenos Aires-based food ingredient sourcing company connecting South African food manufacturers with certified Mercosur producers.">
+  <meta property="og:title" content="About JMR Global Group, Mercosur to Africa Food Ingredient Sourcing">
+  <meta property="og:description" content="JMR Global Group is a Buenos Aires-based food ingredient sourcing company connecting South African food manufacturers with certified Mercosur producers.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jmrglobalgroup.com/images/og-share.png">
+  <meta property="og:image:secure_url" content="https://jmrglobalgroup.com/images/og-share.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+<style>
+    /* Desktop layout defaults */
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 15px;
+      box-sizing: border-box;
+      position: relative;
+    }
+    .nav-logo {
+      flex-shrink: 0;
+    }
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    .menu-toggle {
+      display: none; /* Hidden on desktop viewports */
+      background: none;
+      border: none;
+      font-size: 28px;
+      cursor: pointer;
+      color: #0d1f3c;
+      padding: 5px;
+      line-height: 1;
+    }
+
+    /* Mobile Responsive Layout (Screens under 768px wide) */
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block; /* Show hamburger button on mobile */
+      }
+      .nav-links {
+        display: none; /* Hide standard link row by default */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff; 
+        padding: 20px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        gap: 15px;
+        z-index: 1000;
+        align-items: flex-start;
+      }
+      /* This utility class gets toggled via the JavaScript function below */
+      .nav-links.active {
+        display: flex; 
+      }
+    }
+  </style>
+</head>
+<body>
+<nav style="background:#fff; position:relative; z-index:1001;">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.svg" alt="JMR Global" style="height:30px; display:block;">
+    </a>
+    
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation">☰</button>
+
+    <div class="nav-links" id="navLinks">
+      <a href="index.html" class="">Home</a>
+      <a href="products.html" class="">Products</a>
+      <a href="about.html" class="active">About</a>
+      <a href="insights.html" class="">Insights</a>
+      <a href="contact.html" class="">Contact</a>
+      <a href="https://www.linkedin.com/company/jmrglobalingredients/" target="_blank" rel="noopener" style="color:var(--gold)">LinkedIn</a>
+    </div>
+  </div>
+</nav>
+<section class="hero" style="padding:72px 0 60px">
+  <div class="hero-dots"></div>
+  <div class="container" style="position:relative">
+    <div class="hero-badge">OUR STORY</div>
+    <h1 style="font-size:clamp(32px,5vw,52px)">Two regions, one Atlantic, one team</h1>
+    <p>Built on 10 years of agribusiness experience across Latin America and Africa.</p>
+  </div>
+</section>
+
+<section style="padding:48px 0;background:var(--bg-warm)">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center" class="two-col">
+      <div>
+        <div class="badge">Who We Are</div>
+        <h2 class="section-title">Buenos Aires to Durban</h2>
+        <p style="color:var(--text-mid);font-size:16px;line-height:1.8;margin-bottom:16px">
+          JMR Global Group was founded by South Africans based in Buenos Aires with over a decade of experience building agribusiness trade flows between Latin America and the world.
+        </p>
+        <p style="color:var(--text-mid);font-size:16px;line-height:1.8;margin-bottom:16px">
+          We sit at a unique intersection, deep knowledge of the Mercosur supply base on one side, and strong relationships with South African food manufacturers and distributors on the other.
+        </p>
+        <p style="color:var(--text-mid);font-size:16px;line-height:1.8">
+          Our model is simple: identify where South Africa is overpaying or undersupplied, find the best Mercosur producer to fill that gap, and manage the relationship from first contact to delivered product.
+        </p>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px" class="four-col">
+        <div style="border-radius:8px;overflow:hidden;aspect-ratio:4/3"><img src="images/dairy-visit.jpg" alt="Dairy supply chain visit" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="border-radius:8px;overflow:hidden;aspect-ratio:4/3"><img src="images/eldoret.jpg" alt="Eldoret Kenya" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="border-radius:8px;overflow:hidden;aspect-ratio:4/3"><img src="images/djei1726.jpg" alt="Agricultural field visit" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="border-radius:8px;overflow:hidden;aspect-ratio:4/3"><img src="images/chickens.jpg" alt="Poultry East Africa" style="width:100%;height:100%;object-fit:cover"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:48px 0;background:var(--bg)">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:52px">
+      <div class="badge">How We Work</div>
+      <h2 class="section-title">Our Approach</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px" class="two-col">
+      <div class="card">
+        <div style="font-size:32px;margin-bottom:16px">🌎</div>
+        <h3>Presence On Both Continents</h3>
+        <p>Our team in Mercosur maintains close relationships with established producers, while our team in South Africa understands the needs of local food manufacturers. We operate with genuine market knowledge on both sides of the Atlantic.</p>
+      </div>
+      <div class="card">
+        <div style="font-size:32px;margin-bottom:16px">🤝</div>
+        <h3>Building New Trade Routes</h3>
+        <p>We connect Mercosur producers directly with South African food manufacturers, offering local buyers a credible alternative to traditional EU and Chinese suppliers, often with stronger pricing and shorter lead times.</p>
+      </div>
+      <div class="card">
+        <div style="font-size:32px;margin-bottom:16px">🚢</div>
+        <h3>End to End Facilitation</h3>
+        <p>From initial introduction through to delivered product, we manage the full process: specifications, certifications, logistics and communication across the Atlantic, allowing both parties to focus on their core business.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:48px 0;background:var(--bg-warm)">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center" class="two-col">
+      <div>
+        <div class="badge">Our Markets</div>
+        <h2 class="section-title">Mercosur to Africa</h2>
+        <p style="color:var(--text-mid);font-size:16px;line-height:1.8;margin-bottom:16px">
+          We source exclusively from Mercosur, Argentina, Brazil, Uruguay, Paraguay and Chile. These are among the world's most competitive producers of food ingredients, yet many are completely absent from the South African market.
+        </p>
+        <p style="color:var(--text-mid);font-size:16px;line-height:1.8;margin-bottom:16px">
+          South Africa is our primary end market, but we work across the continent, Nigeria, Kenya, Egypt, Ghana, Morocco and East Africa.
+        </p>
+        <p style="color:var(--text-mid);font-size:16px;line-height:1.8">
+          The opportunity is structural: Mercosur produces at world-competitive prices, South Africa imports from more expensive origins. We close that gap.
+        </p>
+      </div>
+      <div class="stats-grid" style="margin-top:0;grid-template-columns:1fr 1fr">
+        <div class="stat-box"><div class="stat-value">5</div><div class="stat-label">Mercosur countries</div></div>
+        <div class="stat-box"><div class="stat-value">10+</div><div class="stat-label">African markets</div></div>
+        <div class="stat-box"><div class="stat-value">R5.3B</div><div class="stat-label">Mercosur→SA dairy 2025</div></div>
+        <div class="stat-box"><div class="stat-value">$0</div><div class="stat-label">Arg lecithin to SA today</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:72px 0;background:var(--navy)">
+  <div class="container" style="text-align:center">
+    <h2 style="color:#fff;margin-bottom:16px">Want to work with us?</h2>
+    <p style="color:rgba(255,255,255,0.7);margin-bottom:32px;font-size:17px">We work with food manufacturers, ingredient distributors and Mercosur producers. Get in touch.</p>
+    <a href="contact.html" class="btn-gold">CONTACT US</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-logo"><img src="images/logo-light.svg" alt="JMR Global" style="height:28px;display:block"></div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="insights.html">Insights</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://www.linkedin.com/company/jmrglobalingredients/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+  <div class="container" style="margin-top:16px">
+    <div class="footer-copy">INGREDIENT SOURCING · MERCOSUR TO AFRICA · © 2026 JMR GLOBAL GROUP</div>
+  </div>
+</footer>
+</body></html>
