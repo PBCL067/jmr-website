@@ -2,3 +2,12 @@ node_modules/
 dist/
 .env
 .vercel
+
+*.HEIC
+*.heic
+
+_unused_images/
+
+*.MOV
+*.mov
+*.mp4

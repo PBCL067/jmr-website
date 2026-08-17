@@ -3,16 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us, JMR Global Group | Jewels of the Mercosur Region</title>
-  <meta name="description" content="Founded by Matt Callcott-Stevens, JMR Global connects agricultural producers in the Mercosur region with industrial food manufacturers and importers across the GCC and Middle East.">
-  <meta property="og:title" content="About Us, JMR Global Group | Jewels of the Mercosur Region">
-  <meta property="og:description" content="Founded by Matt Callcott-Stevens, JMR Global connects agricultural producers in the Mercosur region with industrial food manufacturers and importers across the GCC and Middle East.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://jmrglobalgroup.com/images/og-share.png">
-  <meta property="og:image:secure_url" content="https://jmrglobalgroup.com/images/og-share.png">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <title>About Us | JMR Global Group - Jewels of the Mercosur Region</title>
+  <meta name="description" content="Founded by Matt Callcott-Stevens, JMR Global connects agricultural producers in the Mercosur region with industrial food manufacturers across the GCC & Middle East.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -46,15 +38,21 @@
     .grid-3 {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 32px;
-      margin-top: 40px;
+      gap: 28px;
+      margin-top: 36px;
     }
     .card-about {
       background: #ffffff;
       border: 1px solid #e2e8f0;
+      border-top: 3px solid var(--gold, #d4af37);
       border-radius: 8px;
       padding: 32px;
-      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card-about:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
     }
     .card-about h3 {
       font-family: var(--font-display, 'Syne', sans-serif);
@@ -71,7 +69,7 @@
     .stat-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
+      gap: 16px;
     }
     .stat-card {
       background: #ffffff;
@@ -79,10 +77,11 @@
       border-radius: 8px;
       padding: 24px;
       text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
     }
     .stat-value {
       font-family: var(--font-display, 'Syne', sans-serif);
-      font-size: 32px;
+      font-size: 34px;
       font-weight: 800;
       color: var(--gold, #d4af37);
       margin-bottom: 4px;
@@ -118,7 +117,7 @@
 </head>
 <body>
 
-<nav style="background:#fff; position:relative; z-index:1001;">
+<nav style="background:#fff; position:relative; z-index:1001; border-bottom: 1px solid #e2e8f0;">
   <div class="container nav-inner">
     <a href="index.html" class="nav-logo">
       <img src="images/logo.svg" alt="JMR Global" style="height:30px; display:block;">
@@ -135,28 +134,29 @@
   </div>
 </nav>
 
-<section class="hero" style="padding:72px 0 60px">
-  <div class="hero-dots"></div>
-  <div class="container" style="position:relative">
-    <div class="hero-badge" style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.1em;color:var(--gold);text-transform:uppercase;margin-bottom:16px;">OUR STORY</div>
-    <h1 style="font-size:clamp(32px,5vw,52px); margin-bottom: 16px; max-width:800px;">Jewels of the Mercosur Region</h1>
-    <p style="font-size: 18px; color: #475569; max-width: 680px;">Connecting high-yield South American agricultural producers directly to industrial food manufacturing and import corridors across the GCC & Middle East.</p>
+<!-- Hero Section with Las Pampas Background -->
+<section class="hero" style="padding:100px 0 88px; background: linear-gradient(180deg, rgba(11,19,43,0.85) 0%, rgba(11,19,43,0.95) 100%), url('images/Las Pampas.jpg') center/cover no-repeat; color: #ffffff; text-align: center;">
+  <div class="container" style="position:relative; max-width: 860px;">
+    <div class="hero-badge" style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.12em;color:var(--gold, #d4af37);text-transform:uppercase;margin-bottom:16px;">OUR STORY</div>
+    <h1 style="font-size:clamp(34px,5vw,54px); margin-bottom: 20px; color:#ffffff; font-weight:800; line-height:1.15;">Jewels of the Mercosur Region</h1>
+    <p style="font-size: 19px; color: #cbd5e1; max-width: 720px; margin: 0 auto; line-height:1.6;">Connecting high-yield South American agricultural producers directly to industrial food manufacturing and import corridors across the GCC & Middle East.</p>
   </div>
 </section>
 
-<section style="padding:48px 0; background:#fff;">
+<!-- Story & Real Field Operations Section -->
+<section style="padding:72px 0; background:#fff;">
   <div class="container">
-    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:48px; align-items:center;">
+    <div style="display:grid; grid-template-columns: 1.2fr 0.8fr; gap:56px; align-items:center;">
       <div>
-        <div style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.1em;color:var(--gold);text-transform:uppercase;margin-bottom:12px;">WHO WE ARE</div>
-        <h2 style="font-size:32px; font-weight:800; color:#0f172a; margin-bottom:20px;">Built on Nearly Two Decades of Cross-Border Trade</h2>
-        <p style="font-size:16px; color:#475569; line-height:1.7; margin-bottom:16px;">
+        <div style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.1em;color:var(--gold, #d4af37);text-transform:uppercase;margin-bottom:12px;">WHO WE ARE</div>
+        <h2 style="font-size:32px; font-weight:800; color:#0f172a; margin-bottom:24px; line-height:1.25;">Built on Nearly Two Decades of Cross-Border Trade</h2>
+        <p style="font-size:16px; color:#475569; line-height:1.75; margin-bottom:20px;">
           JMR Global was established by <strong>Matt Callcott-Stevens</strong>, whose cross-border trading career began in 2009 managing high-volume beverage and agricultural trade flows between emerging markets in Asia and Africa.
         </p>
-        <p style="font-size:16px; color:#475569; line-height:1.7; margin-bottom:16px;">
+        <p style="font-size:16px; color:#475569; line-height:1.75; margin-bottom:20px;">
           Working directly with agricultural producers to establish direct trade channels into neighbouring markets and the Gulf region provided a firsthand understanding of GCC food security requirements, industrial ingredient specifications, and import standards.
         </p>
-        <p style="font-size:16px; color:#475569; line-height:1.7;">
+        <p style="font-size:16px; color:#475569; line-height:1.75; margin:0;">
           After relocating to Argentina in the mid-2010s, Matt recognized the unmatched agricultural capacity of the Mercosur bloc—Argentina, Brazil, Paraguay, and Uruguay. <strong>JMR (Jewels of the Mercosur Region)</strong> was created to connect these farming regions directly with food manufacturers in the Middle East.
         </p>
       </div>
@@ -181,15 +181,28 @@
         </div>
       </div>
     </div>
+
+    <!-- Authentic Field Photos Grid -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 56px;">
+      <div style="border-radius: 10px; overflow: hidden; box-shadow: 0 4px 14px rgba(0,0,0,0.08); height: 280px; position:relative;">
+        <img src="images/Soil Testing.JPG" alt="Origin Quality Inspection & Soil Testing" style="width:100%; height:100%; object-fit:cover; display:block;">
+        <div style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:16px; color:#fff; font-family:var(--font-mono); font-size:12px;">ORIGIN QUALITY & SOIL INSPECTION</div>
+      </div>
+      <div style="border-radius: 10px; overflow: hidden; box-shadow: 0 4px 14px rgba(0,0,0,0.08); height: 280px; position:relative;">
+        <img src="images/Matt Coffee Kenya.jpg" alt="Cross-Border Trade Experience" style="width:100%; height:100%; object-fit:cover; display:block;">
+        <div style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:16px; color:#fff; font-family:var(--font-mono); font-size:12px;">FIELD OPERATIONS & PRODUCER RELATIONS</div>
+      </div>
+    </div>
   </div>
 </section>
 
-<section style="padding:64px 0; background:var(--bg, #f8fafc);">
+<!-- Strategic Focus Section -->
+<section style="padding:80px 0; background: #f8fafc; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0;">
   <div class="container">
-    <div style="text-align:center; max-width:700px; margin:0 auto 40px;">
-      <div style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.1em;color:var(--gold);text-transform:uppercase;margin-bottom:12px;">OUR STRATEGIC FOCUS</div>
-      <h2 style="font-size:32px; font-weight:800; color:#0f172a;">Why We Specialize in Pulses & Derivatives</h2>
-      <p style="font-size:16px; color:#475569; margin-top:12px;">As traditional cash crops face rising input costs and unpredictable climate conditions, pulse derivatives offer a sustainable, high-protein food source for global buyers.</p>
+    <div style="text-align:center; max-width:720px; margin:0 auto 48px;">
+      <div style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.1em;color:var(--gold, #d4af37);text-transform:uppercase;margin-bottom:12px;">OUR STRATEGIC FOCUS</div>
+      <h2 style="font-size:32px; font-weight:800; color:#0f172a; line-height:1.25;">Why We Specialize in Pulses & Derivatives</h2>
+      <p style="font-size:16px; color:#475569; margin-top:14px; line-height:1.6;">As traditional cash crops face rising input costs and unpredictable climate conditions, pulse derivatives offer a sustainable, high-protein food source for global buyers.</p>
     </div>
 
     <div class="grid-3">
@@ -209,11 +222,13 @@
   </div>
 </section>
 
-<section style="padding:72px 0; background:var(--navy, #0f172a); color:#fff;">
-  <div class="container" style="text-align:center;">
-    <h2 style="color:#fff; margin-bottom:16px;">Partner with JMR Global</h2>
-    <p style="color:rgba(255,255,255,0.7); margin-bottom:32px; font-size:17px; max-width:600px; margin-left:auto; margin-right:auto;">Direct producer sourcing, origin oversight, and trade facilitation between South America and the Gulf.</p>
-    <a href="contact.html" class="btn-request" style="display:inline-block; background:var(--gold, #d4af37); color:#fff; font-family:var(--font-mono); font-size:13px; padding:14px 32px; border-radius:6px; text-decoration:none; font-weight:500;">GET IN TOUCH</a>
+<!-- Logistics & Port Reach Banner -->
+<section style="position:relative; padding:100px 0; background: linear-gradient(rgba(11,19,43,0.85), rgba(11,19,43,0.85)), url('images/Cape Town Port.jpg') center/cover no-repeat; color:#fff; text-align:center;">
+  <div class="container" style="max-width:800px; position:relative;">
+    <div style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.12em;color:var(--gold, #d4af37);text-transform:uppercase;margin-bottom:12px;">GLOBAL LOGISTICS & SHIPMENT</div>
+    <h2 style="color:#fff; margin-bottom:16px; font-size:34px; font-weight:800;">Partner with JMR Global</h2>
+    <p style="color:#cbd5e1; margin-bottom:32px; font-size:17px; line-height:1.6;">Direct producer sourcing, origin oversight, and trade facilitation between South America and the Gulf.</p>
+    <a href="contact.html" class="btn-request" style="display:inline-block; background:var(--gold, #d4af37); color:#fff; font-family:var(--font-mono); font-size:13px; padding:14px 32px; border-radius:6px; text-decoration:none; font-weight:600; letter-spacing:0.05em;">GET IN TOUCH</a>
   </div>
 </section>
 
@@ -235,4 +250,3 @@
 
 </body>
 </html>
-<!-- cache-bust -->
