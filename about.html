@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About JMR Global Group, South America to GCC & Middle East Food Ingredient Sourcing</title>
-  <meta name="description" content="JMR Global Group is a Buenos Aires-based food ingredient sourcing company connecting South African food manufacturers with certified Mercosur producers.">
-  <meta property="og:title" content="About JMR Global Group, South America to GCC & Middle East Food Ingredient Sourcing">
-  <meta property="og:description" content="JMR Global Group is a Buenos Aires-based food ingredient sourcing company connecting South African food manufacturers with certified Mercosur producers.">
+  <title>About Us, JMR Global Group | Jewels of the Mercosur Region</title>
+  <meta name="description" content="Founded by Matt Callcott-Stevens, JMR Global connects agricultural producers in the Mercosur region with industrial food manufacturers and importers across the GCC and Middle East.">
+  <meta property="og:title" content="About Us, JMR Global Group | Jewels of the Mercosur Region">
+  <meta property="og:description" content="Founded by Matt Callcott-Stevens, JMR Global connects agricultural producers in the Mercosur region with industrial food manufacturers and importers across the GCC and Middle East.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://jmrglobalgroup.com/images/og-share.png">
   <meta property="og:image:secure_url" content="https://jmrglobalgroup.com/images/og-share.png">
@@ -17,8 +17,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="css/style.css">
-<style>
-    /* Desktop layout defaults */
+  <style>
     .nav-inner {
       display: flex;
       align-items: center;
@@ -28,16 +27,14 @@
       box-sizing: border-box;
       position: relative;
     }
-    .nav-logo {
-      flex-shrink: 0;
-    }
+    .nav-logo { flex-shrink: 0; }
     .nav-links {
       display: flex;
       gap: 20px;
       align-items: center;
     }
     .menu-toggle {
-      display: none; /* Hidden on desktop viewports */
+      display: none;
       background: none;
       border: none;
       font-size: 28px;
@@ -46,14 +43,62 @@
       padding: 5px;
       line-height: 1;
     }
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 32px;
+      margin-top: 40px;
+    }
+    .card-about {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 32px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .card-about h3 {
+      font-family: var(--font-display, 'Syne', sans-serif);
+      font-size: 20px;
+      color: #0f172a;
+      margin-bottom: 12px;
+    }
+    .card-about p {
+      font-size: 15px;
+      color: #475569;
+      line-height: 1.6;
+      margin: 0;
+    }
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .stat-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 24px;
+      text-align: center;
+    }
+    .stat-value {
+      font-family: var(--font-display, 'Syne', sans-serif);
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--gold, #d4af37);
+      margin-bottom: 4px;
+    }
+    .stat-label {
+      font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      color: #64748b;
+      text-transform: uppercase;
+    }
 
-    /* Mobile Responsive Layout (Screens under 768px wide) */
     @media (max-width: 768px) {
-      .menu-toggle {
-        display: block; /* Show hamburger button on mobile */
-      }
+      .menu-toggle { display: block; }
       .nav-links {
-        display: none; /* Hide standard link row by default */
+        display: none;
         flex-direction: column;
         position: absolute;
         top: 100%;
@@ -66,140 +111,127 @@
         z-index: 1000;
         align-items: flex-start;
       }
-      /* This utility class gets toggled via the JavaScript function below */
-      .nav-links.active {
-        display: flex; 
-      }
+      .nav-links.active { display: flex; }
+      .stat-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
+
 <nav style="background:#fff; position:relative; z-index:1001;">
   <div class="container nav-inner">
     <a href="index.html" class="nav-logo">
       <img src="images/logo.svg" alt="JMR Global" style="height:30px; display:block;">
     </a>
-    
-    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation">☰</button>
-
+    <button class="menu-toggle" onclick="document.getElementById('navLinks').classList.toggle('active')" aria-label="Toggle navigation">☰</button>
     <div class="nav-links" id="navLinks">
-      <a href="index.html" class="">Home</a>
-      <a href="products.html" class="">Products</a>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
       <a href="about.html" class="active">About</a>
-      
-      <a href="contact.html" class="">Contact</a>
+      <a href="insights.html">Insights</a>
+      <a href="contact.html">Contact</a>
       <a href="https://www.linkedin.com/company/jmrglobalingredients/" target="_blank" rel="noopener" style="color:var(--gold)">LinkedIn</a>
     </div>
   </div>
 </nav>
+
 <section class="hero" style="padding:72px 0 60px">
   <div class="hero-dots"></div>
   <div class="container" style="position:relative">
-    <div class="hero-badge">OUR STORY</div>
-    <h1 style="font-size:clamp(32px,5vw,52px)">Connecting South American Agriculture to Global Food Manufacturers</h1>
-    <p>Built on 10 years of agribusiness experience across Latin America and Africa.</p>
+    <div class="hero-badge" style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.1em;color:var(--gold);text-transform:uppercase;margin-bottom:16px;">OUR STORY</div>
+    <h1 style="font-size:clamp(32px,5vw,52px); margin-bottom: 16px; max-width:800px;">Jewels of the Mercosur Region</h1>
+    <p style="font-size: 18px; color: #475569; max-width: 680px;">Connecting high-yield South American agricultural producers directly to industrial food manufacturing and import corridors across the GCC & Middle East.</p>
   </div>
 </section>
 
-<section style="padding:48px 0;background:var(--bg-warm)">
+<section style="padding:48px 0; background:#fff;">
   <div class="container">
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center" class="two-col">
+    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:48px; align-items:center;">
       <div>
-        <div class="badge">Who We Are</div>
-        <h2 class="section-title">Buenos Aires to the Gulf & GCC Corridors</h2>
-        <p style="color:var(--text-mid);font-size:16px;line-height:1.8;margin-bottom:16px">
-          JMR Global Group was founded by South Africans based in Buenos Aires with over a decade of experience building agribusiness trade flows between Latin America and the world.
+        <div style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.1em;color:var(--gold);text-transform:uppercase;margin-bottom:12px;">WHO WE ARE</div>
+        <h2 style="font-size:32px; font-weight:800; color:#0f172a; margin-bottom:20px;">Built on Nearly Two Decades of Cross-Border Trade</h2>
+        <p style="font-size:16px; color:#475569; line-height:1.7; margin-bottom:16px;">
+          JMR Global was established by <strong>Matt Callcott-Stevens</strong>, whose cross-border trading career began in 2009 managing high-volume beverage and agricultural trade flows between emerging markets in Asia and Africa.
         </p>
-        <p style="color:var(--text-mid);font-size:16px;line-height:1.8;margin-bottom:16px">
-          We specialize in sourcing export-grade agro-commodities and industrial food ingredients—including fine-mesh chickpea flour, red and green lentil flours, modified starches, soya lecithin, and dairy powders. Originating directly from certified Argentine and South American processing facilities, we manage complete supply chain routing into major GCC trade ports like CFR Salalah and Jebel Ali.</p>
-        <p style="color:var(--text-mid);font-size:16px;line-height:1.8">
-          Our model is simple: identify where South Africa is overpaying or undersupplied, find the best Mercosur producer to fill that gap, and manage the relationship from first contact to delivered product.
+        <p style="font-size:16px; color:#475569; line-height:1.7; margin-bottom:16px;">
+          Working directly with agricultural producers to establish direct trade channels into neighbouring markets and the Gulf region provided a firsthand understanding of GCC food security requirements, industrial ingredient specifications, and import standards.
+        </p>
+        <p style="font-size:16px; color:#475569; line-height:1.7;">
+          After relocating to Argentina in the mid-2010s, Matt recognized the unmatched agricultural capacity of the Mercosur bloc—Argentina, Brazil, Paraguay, and Uruguay. <strong>JMR (Jewels of the Mercosur Region)</strong> was created to connect these farming regions directly with food manufacturers in the Middle East.
         </p>
       </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px" class="four-col">
-        <div style="border-radius:8px;overflow:hidden;aspect-ratio:4/3"><img src="images/dairy-visit.jpg" alt="Dairy supply chain visit" style="width:100%;height:100%;object-fit:cover"></div>
-        <div style="border-radius:8px;overflow:hidden;aspect-ratio:4/3"><img src="images/eldoret.jpg" alt="Eldoret Kenya" style="width:100%;height:100%;object-fit:cover"></div>
-        <div style="border-radius:8px;overflow:hidden;aspect-ratio:4/3"><img src="images/djei1726.jpg" alt="Agricultural field visit" style="width:100%;height:100%;object-fit:cover"></div>
-        <div style="border-radius:8px;overflow:hidden;aspect-ratio:4/3"><img src="images/chickens.jpg" alt="Poultry East Africa" style="width:100%;height:100%;object-fit:cover"></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section style="padding:48px 0;background:var(--bg)">
-  <div class="container">
-    <div style="text-align:center;margin-bottom:52px">
-      <div class="badge">How We Work</div>
-      <h2 class="section-title">Our Approach</h2>
-    </div>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px" class="two-col">
-      <div class="card">
-        <div style="font-size:32px;margin-bottom:16px">🌎</div>
-        <h3>Presence On Both Continents</h3>
-        <p>Our team in Mercosur maintains close relationships with established producers, while our team in South Africa understands the needs of local food manufacturers. We operate with genuine market knowledge on both sides of the Atlantic.</p>
-      </div>
-      <div class="card">
-        <div style="font-size:32px;margin-bottom:16px">🤝</div>
-        <h3>Building New Trade Routes</h3>
-        <p>We connect South American producers directly with Gulf food manufacturers and industrial distributors, offering local buyers a credible alternative to traditional EU and Chinese suppliers, often with stronger pricing and shorter lead times.</p>
-      </div>
-      <div class="card">
-        <div style="font-size:32px;margin-bottom:16px">🚢</div>
-        <h3>End to End Facilitation</h3>
-        <p>From initial introduction through to delivered product, we manage the full process: specifications, certifications, logistics and communication across the Atlantic, allowing both parties to focus on their core business.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section style="padding:48px 0;background:var(--bg-warm)">
-  <div class="container">
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center" class="two-col">
       <div>
-        <div class="badge">Our Markets</div>
-        <h2 class="section-title">South America to GCC & Middle East</h2>
-        <p style="color:var(--text-mid);font-size:16px;line-height:1.8;margin-bottom:16px">
-          We source exclusively from Mercosur, Argentina, Brazil, Uruguay, Paraguay and Chile. These are among the world's most competitive producers of food ingredients, yet many are completely absent from the South African market.
-        </p>
-        <p style="color:var(--text-mid);font-size:16px;line-height:1.8;margin-bottom:16px">
-          South Africa is our primary end market, but we work across the continent, Nigeria, Kenya, Egypt, Ghana, Morocco and East Africa.
-        </p>
-        <p style="color:var(--text-mid);font-size:16px;line-height:1.8">
-          The opportunity is structural: Mercosur produces at world-competitive prices, South Africa imports from more expensive origins. We close that gap.
-        </p>
-      </div>
-      <div class="stats-grid" style="margin-top:0;grid-template-columns:1fr 1fr">
-        <div class="stat-box"><div class="stat-value">5</div><div class="stat-label">Mercosur countries</div></div>
-        <div class="stat-box"><div class="stat-value">10+</div><div class="stat-label">African markets</div></div>
-        <div class="stat-box"><div class="stat-value">R5.3B</div><div class="stat-label">Mercosur→SA dairy 2025</div></div>
-        <div class="stat-box"><div class="stat-value">$0</div><div class="stat-label">Arg lecithin to SA today</div></div>
+        <div class="stat-grid">
+          <div class="stat-card">
+            <div class="stat-value">2009</div>
+            <div class="stat-label">Cross-Border Origin</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">3.8M+</div>
+            <div class="stat-label">Mercosur Pulse Hectares</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">4</div>
+            <div class="stat-label">Mercosur Nations</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">GCC</div>
+            <div class="stat-label">Primary Trade Corridor</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section style="padding:72px 0;background:var(--navy)">
-  <div class="container" style="text-align:center">
-    <h2 style="color:#fff;margin-bottom:16px">Want to work with us?</h2>
-    <p style="color:rgba(255,255,255,0.7);margin-bottom:32px;font-size:17px">We work with food manufacturers, ingredient distributors and Mercosur producers. Get in touch.</p>
-    <a href="contact.html" class="btn-gold">CONTACT US</a>
+<section style="padding:64px 0; background:var(--bg, #f8fafc);">
+  <div class="container">
+    <div style="text-align:center; max-width:700px; margin:0 auto 40px;">
+      <div style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.1em;color:var(--gold);text-transform:uppercase;margin-bottom:12px;">OUR STRATEGIC FOCUS</div>
+      <h2 style="font-size:32px; font-weight:800; color:#0f172a;">Why We Specialize in Pulses & Derivatives</h2>
+      <p style="font-size:16px; color:#475569; margin-top:12px;">As traditional cash crops face rising input costs and unpredictable climate conditions, pulse derivatives offer a sustainable, high-protein food source for global buyers.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card-about">
+        <h3>Climate Resilience</h3>
+        <p>Unlike water-intensive traditional cash crops, legumes thrive in temperamental weather conditions. They offer essential stability for long-term food security in high-demand import regions like the GCC.</p>
+      </div>
+      <div class="card-about">
+        <h3>Soil Health & Sustainability</h3>
+        <p>Pulses naturally fix atmospheric nitrogen into soil, reducing synthetic fertilizer dependence and protecting long-term agricultural yield across South American farming communities.</p>
+      </div>
+      <div class="card-about">
+        <h3>Economic Efficiency</h3>
+        <p>Soaring production costs for traditional grains pass heavy inflation downstream to consumers. Pulse derivatives provide high-protein ingredient solutions at predictable cost structures.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:72px 0; background:var(--navy, #0f172a); color:#fff;">
+  <div class="container" style="text-align:center;">
+    <h2 style="color:#fff; margin-bottom:16px;">Partner with JMR Global</h2>
+    <p style="color:rgba(255,255,255,0.7); margin-bottom:32px; font-size:17px; max-width:600px; margin-left:auto; margin-right:auto;">Direct producer sourcing, origin oversight, and trade facilitation between South America and the Gulf.</p>
+    <a href="contact.html" class="btn-request" style="display:inline-block; background:var(--gold, #d4af37); color:#fff; font-family:var(--font-mono); font-size:13px; padding:14px 32px; border-radius:6px; text-decoration:none; font-weight:500;">GET IN TOUCH</a>
   </div>
 </section>
 
 <footer>
-  <div class="container footer-inner">
+  <div class="container footer-inner" style="display:flex; justify-content:space-between; align-items:center; padding: 40px 0 20px;">
     <div class="footer-logo"><img src="images/logo-light.svg" alt="JMR Global" style="height:28px;display:block"></div>
-    <div class="footer-links">
-      <a href="index.html">Home</a>
-      <a href="products.html">Products</a>
-      <a href="about.html">About</a>
-      
-      <a href="contact.html">Contact</a>
-      <a href="https://www.linkedin.com/company/jmrglobalingredients/" target="_blank" rel="noopener">LinkedIn</a>
+    <div class="footer-links" style="display:flex; gap: 20px;">
+      <a href="index.html" style="color:#fff; text-decoration:none; font-size:14px;">Home</a>
+      <a href="products.html" style="color:#fff; text-decoration:none; font-size:14px;">Products</a>
+      <a href="about.html" style="color:#fff; text-decoration:none; font-size:14px;">About</a>
+      <a href="insights.html" style="color:#fff; text-decoration:none; font-size:14px;">Insights</a>
+      <a href="contact.html" style="color:#fff; text-decoration:none; font-size:14px;">Contact</a>
     </div>
   </div>
-  <div class="container" style="margin-top:16px">
-    <div class="footer-copy">INGREDIENT SOURCING · MERCOSUR TO AFRICA · © 2026 JMR GLOBAL GROUP</div>
+  <div class="container" style="margin-top:16px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; text-align: center;">
+    <div class="footer-copy" style="color:rgba(255,255,255,0.5); font-family:var(--font-mono); font-size:11px; letter-spacing:0.1em;">INGREDIENT SOURCING · MERCOSUR TO GCC · © 2026 JMR GLOBAL GROUP</div>
   </div>
 </footer>
-</body></html>
+
+</body>
+</html>
